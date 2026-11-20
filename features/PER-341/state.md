@@ -1,7 +1,7 @@
 ---
 schema_version: 1
 key: PER-341
-status: escalated
+status: in_development
 current_node: dev
 track: standard
 involved_repos:
@@ -9,7 +9,7 @@ involved_repos:
 depends_on: []
 owner: pavc
 lease_until: '2026-11-22T10:22:36.192673+00:00'
-revision: 25
+revision: 31
 hub_sha: null
 ticket_hash: 30b6eadb23f83542
 jira_hash: 30b6eadb23f83542
@@ -28,13 +28,13 @@ pr_ids:
   hub_plan: '1'
   hub_arch: '2'
   hub: '2'
-waiting_for: dev_failure
+waiting_for: null
 tokens_in: 30811
 tokens_out: 2303
 cost_anthropic_usd: 0.126662
-cursor_tokens_in: 0
-cursor_tokens_out: 0
-cursor_cache_read_tokens: 0
+cursor_tokens_in: 33977
+cursor_tokens_out: 2378
+cursor_cache_read_tokens: 114688
 cursor_cache_write_tokens: 0
 history:
 - node: intake
@@ -106,6 +106,27 @@ history:
   note: 'failed 01-yas2-0: agent made no code changes (agent status=error: agent exit
     1)'
   at: '2026-11-20T10:35:59.714181+00:00'
+- node: catch_up
+  note: manual commit 57e98c863e74e444bda84ca7f30405b2d37b7e21
+  at: '2026-11-20T10:57:16.690753+00:00'
+- node: catch_up
+  note: 'repo graph: yas2-0: Gortex skipped (gortex call contracts failed: Error:
+    required_capability_incomplete: graph.contracts did not become complete within
+    this request: contract analysis of these inp)'
+  at: '2026-11-20T10:57:21.784979+00:00'
+- node: dev
+  note: no breakdown.md (inline story); no sub-issues to create
+  at: '2026-11-20T10:57:21.797578+00:00'
+- node: dev
+  note: starting
+  at: '2026-11-20T10:57:21.797617+00:00'
+- node: dev
+  note: 'not checked before PR, commands empty in project.yaml: repos.yas2-0.commands.test,
+    repos.yas2-0.commands.lint'
+  at: '2026-11-20T10:57:21.797635+00:00'
+- node: dev
+  note: done 01-yas2-0
+  at: '2026-11-20T10:58:06.547652+00:00'
 ---
 
 # Feature state

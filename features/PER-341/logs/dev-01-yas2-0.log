@@ -1,3 +1,13 @@
 RetriableError: Connection stalled repeatedly
 RetriableError: Connection stalled repeatedly
 RetriableError: Connection stalled repeatedly
+I'll start by reading the story and the code-context file so the implementation stays limited to what PER-341 story 01 asks for.
+The story only adds one YAML comment before the `cart` service. I'll locate that block and insert the comment without touching any other lines.
+The comment is in place. Next I’ll confirm the diff is a single added line and that Compose still parses the file.
+Added one comment to `docker-compose.yml`, immediately before the `cart` service.
+
+```yaml
+# Cart service handles shopping cart operations and depends on common-library and postgres
+```
+
+The diff is that single added line. `docker compose config` parsed successfully, and the `cart` service is still defined. Compose also printed the existing warning that the `version` attribute is obsolete; that was already in the file.
