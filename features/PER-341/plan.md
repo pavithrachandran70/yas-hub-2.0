@@ -12,7 +12,7 @@ A trivial change to add one inline comment to existing code without modifying fu
 
 ## Steps
 
-1. [ ] **analyst (inline_story)** — Turn the ticket into one implementable story with acceptance criteria.
+1. [x] **analyst (inline_story)** — Turn the ticket into one implementable story with acceptance criteria.
    - focus: Focus on selecting an appropriate source file and location for the comment; ensure the story guides the developer to a meaningful spot in the codebase.
 2. [ ] **architect_gate (review)** _(auto)_ — Human approval of specs and this plan before Dev.
 3. [ ] **dev** _(auto)_ — Loop delivery.
