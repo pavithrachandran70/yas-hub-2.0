@@ -1,0 +1,4 @@
+agent made no code changes (agent status=error: agent exit 1)
+no test command configured; verification skipped
+agent exit 1
+RetriableError: Connection stalled repeatedly
