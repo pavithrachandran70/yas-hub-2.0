@@ -1,15 +1,15 @@
 ---
 schema_version: 1
 key: PER-341
-status: in_development
-current_node: dev
+status: pr_reviewed
+current_node: pr_review
 track: standard
 involved_repos:
 - yas2-0
 depends_on: []
 owner: pavc
 lease_until: '2026-11-22T10:22:36.192673+00:00'
-revision: 31
+revision: 35
 hub_sha: null
 ticket_hash: 30b6eadb23f83542
 jira_hash: 30b6eadb23f83542
@@ -28,10 +28,11 @@ pr_ids:
   hub_plan: '1'
   hub_arch: '2'
   hub: '2'
-waiting_for: null
-tokens_in: 30811
-tokens_out: 2303
-cost_anthropic_usd: 0.126662
+  yas2-0: '4'
+waiting_for: feature_pr_human
+tokens_in: 33670
+tokens_out: 2310
+cost_anthropic_usd: 0.135344
 cursor_tokens_in: 33977
 cursor_tokens_out: 2378
 cursor_cache_read_tokens: 114688
@@ -127,6 +128,25 @@ history:
 - node: dev
   note: done 01-yas2-0
   at: '2026-11-20T10:58:06.547652+00:00'
+- node: pre_pr_qa
+  note: report written
+  at: '2026-11-20T10:58:09.998142+00:00'
+- node: open_pr
+  note: push yas2-0 ok
+  at: '2026-11-20T10:58:17.218816+00:00'
+- node: open_pr
+  note: PRs opened yas2-0:4
+  at: '2026-11-20T10:58:17.218860+00:00'
+- node: pr_review
+  note: 'cross-repo check yas2-0: 1 contract(s) used by yas2-0/recommendation, yas2-0/search,
+    yas2-0/webhook outside this feature'
+  at: '2026-11-20T10:58:19.366840+00:00'
+- node: pr_review
+  note: diff loaded yas2-0 chars=420
+  at: '2026-11-20T10:58:21.552974+00:00'
+- node: pr_review
+  note: awaiting feature_pr_human
+  at: '2026-11-20T10:58:28.472681+00:00'
 ---
 
 # Feature state

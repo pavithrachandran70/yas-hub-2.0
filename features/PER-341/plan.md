@@ -15,9 +15,9 @@ A trivial change to add one inline comment to existing code without modifying fu
 1. [x] **analyst (inline_story)** — Turn the ticket into one implementable story with acceptance criteria.
    - focus: Focus on selecting an appropriate source file and location for the comment; ensure the story guides the developer to a meaningful spot in the codebase.
 2. [x] **architect_gate (review)** _(auto)_ — Human approval of specs and this plan before Dev.
-3. [ ] **dev** _(auto)_ — Loop delivery.
-4. [ ] **pre_pr_qa** _(auto)_ — Loop delivery.
-5. [ ] **open_pr** _(auto)_ — Loop delivery.
+3. [x] **dev** _(auto)_ — Loop delivery.
+4. [x] **pre_pr_qa** _(auto)_ — Loop delivery.
+5. [x] **open_pr** _(auto)_ — Loop delivery.
 6. [ ] **pr_review** _(auto)_ — Loop delivery.
 7. [ ] **merge** _(auto)_ — Loop delivery.
 
